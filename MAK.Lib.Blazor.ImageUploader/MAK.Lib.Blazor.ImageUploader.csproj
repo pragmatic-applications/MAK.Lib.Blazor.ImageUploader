@@ -2,6 +2,19 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.0.0.1</Version>
+        <RepositoryUrl>https://github.com/pragmatic-applications/MAK.Lib.Blazor.ImageUploader</RepositoryUrl>
+        <Authors>Maurice Antonio Kelly @MAKMaurice</Authors>
+        <Company>Pragmatic Applications</Company>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Description>A .NET 5.0 Blazor Razor Class Library wrapper for Blazor's built-in file uploader. This library provides an easy-to-use component for uploading single or multiple files; it also provides instant visual user feedback of the file(s) uploaded. The component provide Parameters for various options such as AcceptTypeList for the sccepted image types, ToImageType for the image type to convert to, Css to set own style and Multiple to switch between single or multiple file choice.</Description>
+        <PackageReleaseNotes>A .NET 5.0 Blazor Razor Class Library wrapper for Blazor's built-in file uploader. This library provides an easy-to-use component for uploading single or multiple files; it also provides instant visual user feedback of the file(s) uploaded. The component provide Parameters for various options such as AcceptTypeList for the sccepted image types, ToImageType for the image type to convert to, Css to set own style and Multiple to switch between single or multiple file choice.</PackageReleaseNotes>
+        <PackageTags>A .NET 5.0 Blazor Razor Class Library wrapper for Blazor's built-in file uploader</PackageTags>
+        <RepositoryType>A .NET 5.0 Blazor Razor Class Library wrapper for Blazor's built-in file uploader</RepositoryType>
+        <Copyright>Pragmatic Applications - Maurice Antonio Kelly @MAKMaurice</Copyright>
+        <AssemblyVersion>0.0.0.1</AssemblyVersion>
+        <FileVersion>0.0.0.1</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
