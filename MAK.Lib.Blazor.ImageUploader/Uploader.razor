@@ -1,0 +1,48 @@
+﻿
+@if(this.Multiple)
+{
+    <p>@this.HttpImageUploaderService.Message</p>
+
+    <div class="form_group">
+        <div class="custom_file">
+            <h4 class="control_label">Add Files</h4>
+            <InputFile OnChange="this.HandleSelected" accept="@this.AcceptTypeList" multiple id="inputFile" class="@this.Css" />
+        </div>
+    </div>
+
+    @if(this.Images != null && this.Images.Count > 0)
+    {
+        foreach(var item in this.Images)
+        {
+            <div class="card">
+                <div class="card_body">
+                    <p class="card_text">
+                        <img src="@item" style="width:100px" />
+                    </p>
+                </div>
+            </div>
+        }
+    }
+}
+else
+{
+    <p>@this.HttpImageUploaderService.Message</p>
+
+    <div class="form_group">
+        <div class="custom_file">
+            <h4 class="control_label">Add File</h4>
+            <InputFile OnChange="this.HandleSelected" accept="@this.AcceptTypeList" id="inputFile" class="@this.Css" />
+        </div>
+    </div>
+
+    @if(this.ImgUrl != null)
+    {
+        <div class="card">
+            <div class="card_body">
+                <p class="card_text">
+                    <img src="@this.ImgUrl" style="width:100px" />
+                </p>
+            </div>
+        </div>
+    }
+}
